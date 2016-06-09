@@ -17,3 +17,22 @@ window.parseInt=function(){
   count+=1;
   return oldParseInt.apply(null,arguments);
 }
+
+function sum(arr){
+  return arr.reduce(function(x,y){
+    return x+y;
+  });
+}
+sum([1,2,3,4,5]);
+
+function count(){
+  var arr=[];
+  for(var i=1;i<=3;i++){
+    arr.push((function(n){
+      return function(){
+        return n*n;
+      }
+    })(i));
+  }
+  return arr;
+}
