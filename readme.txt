@@ -49,3 +49,5 @@ map/reduce的用法
 filter过滤
 sort
 怎么越来越感觉像是在学习python
+
+箭头函数相当于匿名函数，并且简化了函数定义。
